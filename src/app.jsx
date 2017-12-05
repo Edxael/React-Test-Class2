@@ -19,7 +19,7 @@ export default class extends Component {
       <input type="text" value={this.state.input1} placeholder= "Put Number..."
                        onChange={(eve)=>{this.setState( { input1: eve.target.value })}} />
 
-      <button onClick={ this.AddNumber }>Do Math</button>
+        <button onClick={ this.AddNumber }>Do Math</button>
       { this.state.show ? <div>{ this.state.answer }</div> : <div>Answer goes Here</div> }
     </div>
     )
