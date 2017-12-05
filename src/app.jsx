@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 
-export default class Math1 extends Component {
+export default class extends Component {
   state = { input1: "", answer: 0, show: false }
 
   AddNumber = () => {
     let num1 = parseInt(this.state.input1)
     num1 = num1 * 2
-    console.log(num1)
 
     this.setState({ answer: num1 })
     this.setState({ show: true })
